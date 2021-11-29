@@ -1,0 +1,15 @@
+.wrapper {
+  display: block;
+  margin: 1rem 0;
+  padding: 0 2rem;
+
+  code {
+    border-radius: 4px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1rem;
+    padding: 1rem;
+    white-space: pre-wrap;
+    background-color: var(--code-preview-background);
+    display: block;
+  }
+}

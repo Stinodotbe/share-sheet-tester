@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 0 2rem;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: var(--notification-color);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--notification-background);
+    box-sizing: border-box;
+    margin: 0 0 2rem;
+  }
+}

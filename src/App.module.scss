@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  display: block;
+  padding: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.description {
+  font-size: 1.25rem;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+code {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+}
