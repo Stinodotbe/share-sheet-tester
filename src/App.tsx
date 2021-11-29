@@ -41,7 +41,7 @@ const App = (): JSX.Element => {
         <h1 className={styles.title}>ShareSheet tester</h1>
         <p className={styles.description}>Test your sharesheet configuration with ease by filling out the form. Please make sure to test this on a browser which has the <code>navigator.share</code> function.</p>
       </div>
-      {sharingAllowed() && <NotSupported />}
+      {!sharingAllowed() && <NotSupported />}
       <TestForm
         hasText={hasText}
         hasTitle={hasTitle}
