@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "firefox",
+      "request": "launch",
+      "name": "Debug Firefox",
+      "url": "http://localhost:3000",
+      "preLaunchTask": "npm:start",
+      "postDebugTask": "terminate:tasks",
+      "profile": "default",
+      "reAttach": true,
+      "keepProfileChanges": true,
+      "skipFiles": [
+        "node_modules",
+        "dist",
+        "coverage",
+        "test",
+        "__snapshots__",
+        "__tests__",
+        "__mocks__"
+      ]
+    },
+    {
+      "type": "pwa-chrome",
+      "request": "launch",
+      "name": "Debug Chrome",
+      "url": "http://localhost:3000",
+      "preLaunchTask": "npm:start",
+      "postDebugTask": "terminate:tasks"
+    }
+  ]
+}

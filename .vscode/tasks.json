@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [
+        {
+          "owner": "npm",
+          "pattern": {
+            "regexp": "^$"
+          },
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": "Starting .*",
+            "endsPattern": "Compiled .*"
+          }
+        }
+      ],
+      "label": "npm:start",
+      "detail": "react-scripts start",
+      "isBackground": true
+    },
+    {
+      "type": "shell",
+      "label": "terminate:tasks",
+      "command": "echo ${input:terminate}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "terminateAll"
+    }
+  ]
+}
